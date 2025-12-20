@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Memory ❤️ 1st Anniversary</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="login-page" class="page">
+        <div class="login-box">
+            <h1>Our Secret Room ❤️</h1>
+            <p>ใส่รหัสผ่านเพื่อดูเซอไพรส์จากชั้น</p>
+            <input type="password" id="passwordInput" placeholder="รหัสผ่านคืออะไร?">
+            <button onclick="checkPassword()">ปลดล็อก</button>
+        </div>
+    </div>
+
+    <div id="gallery-page" class="page" style="display: none;">
+        <header>
+            <h1>12 เดือนที่ผ่านมาของเธอกับเค้า</h1>
+            <p>ขอบคุณที่อยู่ด้วยกันมาขนาดนี้นะ ขอบคุณจริงๆ</p>
+        </header>
+        
+        <div class="gallery-grid">
+            <div class="img-card"><img src="img0.jpg"><p class="caption">จุดเริ่มต้นของเธอกับชั้น</p></div>
+            <div class="img-card"><img src="img1.jpg"><p class="caption">เดือนที่ 1:</p></div>
+            <div class="img-card"><img src="img2.jpg"><p class="caption">เดือนที่ 2:</p></div>
+            <div class="img-card"><img src="img3.jpg"><p class="caption">เดือนที่ 3:</p></div>
+            <div class="img-card"><img src="img4.jpg"><p class="caption">เดือนที่ 4:</p></div>
+            <div class="img-card"><img src="img5.jpg"><p class="caption">เดือนที่ 5:</p></div>
+            <div class="img-card"><img src="img6.jpg"><p class="caption">เดือนที่ 6:</p></div>
+            <div class="img-card"><img src="img7.jpg"><p class="caption">เดือนที่ 7:</p></div>
+            <div class="img-card"><img src="img8.jpg"><p class="caption">เดือนที่ 8:</p></div>
+            <div class="img-card"><img src="img9.jpg"><p class="caption">เดือนที่ 9:</p></div>
+            <div class="img-card"><img src="img10.jpg"><p class="caption">เดือนที่ 10:</p></div>
+            <div class="img-card"><img src="img11.jpg"><p class="caption">เดือนที่ 11:</p></div>
+            <div class="img-card"><img src="img12.jpg"><p class="caption">เดือนที่ 12: 1stที่อยู่กับชั้น</p></div>
+        </div>
+        
+        <button class="btn next-btn" onclick="goToVideo()">ดูเซอร์ไพรส์สุดท้าย ➔</button>
+    </div>
+
+    <div id="video-page" class="page" style="display: none;">
+        <div class="video-container">
+            <video id="myVideo" width="100%" controls>
+                <source src="our-video.mp4" type="video/mp4">
+                เบราว์เซอร์ไม่รองรับวิดีโอ
+            </video>
+            <div class="video-message">
+                <h2>ถึงณัฐกาญจน์</h2>
+                <p>ขอบคุณที่ทำให้เค้าเจอความรักดีๆนะ ขอบคุณที่ทำให้รู้ว่าความรักจริงๆมันเป็นยังไง</p>
+                <p>ขอโทษทุกๆอย่างที่ทำให้เธอเสียใจในช่วงเวลา1ปีที่ผ่านมาด้วยนะ ขอบคุณที่เธอทนอยู่กับคนอย่างเค้า</p>
+                <p>เค้ารักเบบิที่สุดในโลกเลย เค้าอยากให้เบบิอยู่กับเค้าไปนานๆเลยนะ:)))</p>
+                <button class="btn" onclick="location.reload()">ย้อนกลับไปดูรูปใหม่</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="wrong-overlay" class="overlay">
+        <div class="cross-mark">❌</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
