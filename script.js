@@ -1,5 +1,5 @@
 // --- 1. ตั้งค่าข้อมูลพื้นฐาน ---
-const targetDate = new Date(2025, 11, 23, 0, 0, 0).getTime(); 
+const targetDate = new Date(2025, 11, 23, 19, 0, 0).getTime(); 
 const CORRECT_PASSWORD = "231267";
 
 // ข้อมูลแต่ละเดือน (แยกรูปเล็ก thumb และรูปที่จะให้เด้งขึ้นมา full)
